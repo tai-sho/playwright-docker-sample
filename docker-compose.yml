@@ -3,7 +3,9 @@
 version: '3.8'
 services:
   playwright-test:
-    image: playwright-test
+    build:
+      context: .
+      dockerfile: Dockerfile
     volumes:
       - ./tests:/app/tests
       - ./playwright.config.js:/app/playwright.config.js
