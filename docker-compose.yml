@@ -1,0 +1,12 @@
+# docker-compose.yml
+
+version: '3.8'
+services:
+  playwright-test:
+    image: playwright-test
+    volumes:
+      - ./tests:/app/tests
+      - ./playwright.config.js:/app/playwright.config.js
+    working_dir: /app
+    command: npx playwright test
+
