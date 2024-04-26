@@ -11,4 +11,6 @@ services:
       - ./playwright.config.js:/app/playwright.config.js
     working_dir: /app
     command: npx playwright test
+    ports:
+      - "9323:9323"
 
