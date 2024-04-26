@@ -15,3 +15,6 @@ $ docker-compose up
 $ make build
 $ make test
 ```
+
+# Access the Report
+http://127.0.0.1:9323/
